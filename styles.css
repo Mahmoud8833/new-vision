@@ -81,3 +81,10 @@
     transition: 0.5s;
     color: #ffffff;
 }
+
+.header .hero p {
+    font-size: 1.5rem;
+    width: 75%;
+    color: white;
+    text-align: center;
+}
