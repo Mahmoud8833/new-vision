@@ -4,33 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="New Vision offers top-notch digital services including web design, graphic design, digital marketing, SEO, and motion graphics to bring your vision to life. Explore now!">
+    <meta name="keywords"
+        content="web design, graphic design, digital marketing, SEO, motion graphics, New Vision, branding, digital services">
+    <meta name="author" content="Mahmoud Abd Alaziz">
+    <meta name="robots" content="index, follow">
+    <title>New Vision | Creative Digital Solutions</title>
     <link rel="stylesheet" href="styles.css">
-    <title>New Vision</title>
 </head>
 
 <body>
     <header class="header">
+        <!-- Navigation Bar -->
         <nav class="nav-bar">
-            <div class="logo">New Vision</div>
-            <ul class="nav-items">
-                <li class="nav-item"><a href="">Home</a></li>
-                <li class="nav-item"><a href="">Projects</a></li>
-                <li class="nav-item"><a href="">About Us</a></li>
-                <li class="nav-item"><a href="">Contact Us</a></li>
-                <li class="nav-item"><a href="">Offers</a></li>
+            <div class="logo">
+                <a href="#">New Vision</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-items" id="nav-menu">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Projects</a></li>
+                <li class="nav-item"><a href="#">About Us</a></li>
+                <li class="nav-item"><a href="#">Contact Us</a></li>
+                <li class="nav-item"><a href="#">Offers</a></li>
             </ul>
         </nav>
+
+        <!-- Hero Section with Background Video -->
         <video src="vid/hero.mp4" autoplay loop muted></video>
         <div class="hero">
             <h1>New Vision</h1>
-            <p>Here is your all-in-one solution for cutting-edge digital services! From web and graphic design to
-                digital marketing, SEO, and motion graphics, we bring your ideas to life with creativity and precision.
-                Our mission is
-                to help you stand out in the digital world with tailored solutions that drive growth and elevate your
-                brand. Explore our
-                services and let’s transform your vision into reality!</p>
+            <p>Your one-stop solution for cutting-edge digital services! We specialize in web design, graphic design,
+                digital marketing, SEO, and motion graphics. Let's transform your vision into a reality!</p>
+            <a href="#services" class="btn-primary">Explore Services</a>
         </div>
     </header>
+
+    <!-- JavaScript to Handle the Menu Toggle -->
+    <script src="script.js"></script>
 </body>
 
 </html>
