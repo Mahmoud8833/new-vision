@@ -31,3 +31,33 @@ window.addEventListener('click', (e) => {
     e.target.style.display = 'none';
   }
 });
+
+// Google Maps Initialization
+function initMap() {
+  var companyLocation = { lat: 30.9753568, lng: 29.7222227 };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: companyLocation,
+  });
+  var marker = new google.maps.Marker({
+    position: companyLocation,
+    map: map,
+  });
+}
+
+// Email form submission with EmailJS
+document
+  .getElementById('contact-form')
+  .addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Example of using EmailJS to send the email
+    emailjs.sendForm('service_uts2qy3', 'template_2h3zse7', this).then(
+      function () {
+        alert('Message sent successfully!');
+      },
+      function (error) {
+        alert('Failed to send message. Please try again.');
+      }
+    );
+  });

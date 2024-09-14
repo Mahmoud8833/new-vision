@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with New Vision through our contact page for any inquiries or collaborations.">
+    <meta name="keywords" content="contact, New Vision, address, phone number, email, map">
+    <meta name="author" content="Mahmoud Abd Alaziz">
+    <meta name="robots" content="index, follow">
+    <title>Contact Us | New Vision</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLqy34CfrEjbTq1mBbp9Gfk3eXuEUotUQ&callback=initMap"
+        async></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="index.html">New Vision</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-items" id="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="projects.html">Projects</a></li>
+            <li class="nav-item"><a href="about.html">About Us</a></li>
+            <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a href="#">Services</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="contact-us">
+        <section class="contact-details">
+            <!-- Google Map -->
+            <div id="map" style="width:90%; height:300px;"></div>
+        </section>
+
+        <section class="contact-form">
+            <div>
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div>
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:info@newvision.com">info@newvision.com</a></p>
+                <p>Phone: <a href="tel:+123456789">+123456789</a></p>
+                <p>Address: 123 New Vision Ave, City Name, Country</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 New Vision. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Google Maps and Form Submission -->
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('4GI_WqJ3bv97EHu2W')
+    </script>
+</body>
+
+</html>
